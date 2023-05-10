@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #d4e3fc;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main aside"
+    "footer footer footer";
+}
+
+/* header */
+
+header {
+    /* background-color: rgb(124, 208, 211); */
+    grid-area: header;
+}
+
+h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.posicion-telefono-mail {
+   display: flex;
+   flex-direction: row;
+   padding-top: 0px;
+   justify-content: space-between;
+}
+
+.imagen-telefono {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.posicion-telefono-mail1 {
+    display: none;
+}
+
+.enlaces {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    justify-content: space-between;
+}
+    
+h2 {
+    margin-top: 0px;
+    font-style: italic;
+    text-align: left;
+}
+
+nav ul li {
+    display: none;
+}
+
+/* main-index*/
+
+/* .imagen-concentrador {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 60px;
+} */
+
+main {
+    grid-area: main;
+}
+
+.texto {
+    text-align: center;
+    /* font-weight: bold;
+    font-size: 30px; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* main-productos */
+
+main h1 {
+    text-align: center;
+    /* font-weight: bold;
+    font-size: 40px; */
+    margin-top: 20px;
+}
+
+.main-productos-button {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.main-productos-button button:hover {
+    font-size: large;
+    font-style: oblique;
+}
+
+.Equipos-de-oxigenoterapia {
+    text-decoration: underline;
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.concentrador {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resumen-foto-c {
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.explicación-foto-c {
+    margin-left: 180px;
+    font-style: oblique;
+    display: flex;
+    align-items: center;
+    font-style: oblique;
+}
+
+.cpap {
+    margin-left: 0%;
+    margin-top: 30px;
+    display: flex;
+}
+
+.resumen-foto-cpap {
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.explicación-foto-cpap {
+    margin-left: 260px;
+    font-style: oblique;
+    display: flex;
+    align-items: center;
+}
+
+.Pañales-titulo {
+    text-decoration: underline;
+    margin-top: 80px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.Pañales {
+    margin-left: 0%;
+    margin-top: 30px;
+    display: flex;
+}
+
+.Pañales p {
+    margin-left: 360px;
+    font-style: oblique;
+    display: flex;
+    align-items: center;
+}
+
+.Descartables-titulo {
+    text-decoration: underline;
+    margin-top: 80px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.imagen-guantes {
+    margin-left: 0%;
+    margin-top: 30px;
+    display: flex;
+}
+
+.imagen-guantes p {
+    margin-left: 340px;
+    font-style: oblique;
+    display: flex;
+    align-items: center;
+}
+
+.imagen-jeringas {
+    margin-left: 0%;
+    margin-top: 30px;
+    display: flex;
+}
+
+.imagen-jeringas p {
+    margin-left: 360px;
+    font-style: oblique;
+    display: flex;
+    align-items: center;
+}
+
+.imagen-apositos-gasas {
+    margin-left: 0px;
+    margin-top: 30px;
+    display: flex;
+}
+
+.imagen-apositos-gasas p {
+    margin-left: 460px;
+    font-style: oblique;
+    display: flex;
+    align-items: center;
+}
+
+/* main-contacto */
+
+.t-main {
+    display: flex;
+    flex-direction: column;
+}
+
+main p {
+    font-weight: bold;
+    font-size: larger;
+}
+
+main div {
+    margin-left: 0px;
+    margin-top: 80px;
+}
+
+.m-main {
+    margin-top: 20px;
+}
+    
+.teléfono {
+    width: 40px;
+    margin-right: 10px;
+}
+    
+.mail {
+    width: 40px;
+    margin-right: 10px;
+}
+    
+.mapa {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+main div iframe {
+    display: flex;
+    flex-direction: row;
+}
+
+/* aside */
+
+aside {
+    grid-area: aside;
+    background-color: chartreuse;
+}
+
+aside h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+aside h4 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    text-align: end;
+    background-color: #a8c6fa;
+    justify-content: space-between;
+    grid-area: footer;
+}
+
+footer h1 {
+    text-align: left;
+}
+
+.consulta-telefono {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.icono-telefono-consulta {
+    width: 40px;
+}
+
+.consulta-mail {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.icono-mail-consulta {
+    width: 40px;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    justify-items: center;
+}
+
+footer form input {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.form-consulta {
+    height: 60px;
+}
+
+footer form button {
+    height: 30px;
+    width: 60px;
+    margin-left: 60px;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.whatsapp a img {
+    width: 80px;
+}
+
+@media (min-width: 768px) {
+    /* header */
+    .enlaces {
+        display: flex;
+        flex-direction: row;
+        padding-top: 10px;
+        justify-content: space-between;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin-right: 50px;
+        font-size: 20px;
+    }
+    
+    nav ul li a {
+        text-decoration: underline;
+        color: black;
+    }
+
+    nav ul li a:hover {
+        color: blue;
+        font-style: oblique;
+        font-size: larger;
+    }
+
+    .posicion-telefono-mail1 {
+        display: flex;
+        margin-right: 10px;
+        align-items: center;
+    }
+    
+    .imagen-mail {
+        width: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .header__container-navbar-movible {
+        display: none;
+    }
+}
