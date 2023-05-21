@@ -1,0 +1,159 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #d4e3fc;
+  display: grid;
+  grid-template-areas: "header header header" "main main aside" "footer footer footer";
+}
+
+header {
+  grid-area: header;
+}
+header h1 a {
+  text-decoration: none;
+  color: black;
+}
+header .header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header .header__container-navbar-mobile {
+  display: inline;
+}
+header .header__container-info {
+  display: none;
+}
+header .header__container-navbar-mobile {
+  display: inline;
+}
+
+main {
+  grid-area: main;
+}
+
+.texto {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+main h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.main--button {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.main--button button:hover {
+  font-size: large;
+  font-style: oblique;
+}
+
+.equipos-de-oxigenoterapia {
+  text-decoration: underline;
+  font-size: larger;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.concentrador {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.concentrador__resumen-foto {
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+}
+.concentrador__explicacion-foto {
+  margin-left: 180px;
+  font-style: oblique;
+  display: flex;
+  align-items: center;
+  font-style: oblique;
+}
+.concentrador .cpap {
+  margin-left: 0%;
+  margin-top: 30px;
+  display: flex;
+}
+.concentrador .cpap__resumen-foto {
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+}
+.concentrador .cpap__explicacion-foto {
+  margin-left: 260px;
+  font-style: oblique;
+  display: flex;
+  align-items: center;
+}
+.concentrador .pañales__title {
+  text-decoration: underline;
+  margin-top: 80px;
+  font-size: larger;
+  font-weight: bold;
+}
+.concentrador .Pañales__image-text {
+  margin-left: 0%;
+  margin-top: 30px;
+  display: flex;
+}
+.concentrador .Pañales__image-text p {
+  margin-left: 360px;
+  font-style: oblique;
+  display: flex;
+  align-items: center;
+}
+.concentrador .Descartables__title {
+  text-decoration: underline;
+  margin-top: 80px;
+  font-size: larger;
+  font-weight: bold;
+}
+.concentrador .Descartables__image-guantes {
+  margin-left: 0%;
+  margin-top: 30px;
+  display: flex;
+}
+.concentrador .Descartables__image-guantes p {
+  margin-left: 340px;
+  font-style: oblique;
+  display: flex;
+  align-items: center;
+}
+.concentrador .image__jeringas {
+  margin-left: 0%;
+  margin-top: 30px;
+  display: flex;
+}
+.concentrador .image__jeringas p {
+  margin-left: 360px;
+  font-style: oblique;
+  display: flex;
+  align-items: center;
+}
+.concentrador .image__apositos-gasas {
+  margin-left: 0px;
+  margin-top: 30px;
+  display: flex;
+}
+.concentrador .image__apositos-gasas p {
+  margin-left: 460px;
+  font-style: oblique;
+  display: flex;
+  align-items: center;
+}
+
+/*# sourceMappingURL=main.css.map */

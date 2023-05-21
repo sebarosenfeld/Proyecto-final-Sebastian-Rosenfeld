@@ -1,0 +1,14 @@
+{
+  "name": "pre-entrega-2",
+  "version": "1.0.0",
+  "description": "Esta es **la segunda pre entrega** del proyecto final.",
+  "main": "index.js",
+  "scripts": {
+    "build-sass" : "sass ./sass/main.scss ./css/main.css -w --no-source-map"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.62.1"
+  }
+}

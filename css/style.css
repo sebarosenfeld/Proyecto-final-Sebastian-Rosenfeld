@@ -10,14 +10,14 @@ body {
     display: grid;
     grid-template-areas: 
     "header header header"
-    "main main aside"
+    "main main main"
+    "aside aside aside"
     "footer footer footer";
 }
 
-/* header */
+/* HEADER */
 
 header {
-    /* background-color: rgb(124, 208, 211); */
     grid-area: header;
 }
 
@@ -26,46 +26,21 @@ h1 a {
     color: black;
 }
 
-.posicion-telefono-mail {
+.header__container {
    display: flex;
    flex-direction: row;
-   padding-top: 0px;
    justify-content: space-between;
 }
 
-.imagen-telefono {
-    width: 40px;
-    margin-right: 10px;
-}
-
-.posicion-telefono-mail1 {
+.header__container-info {
     display: none;
 }
 
-.enlaces {
-    display: flex;
-    flex-direction: row;
-    padding-top: 10px;
-    justify-content: space-between;
-}
-    
-h2 {
-    margin-top: 0px;
-    font-style: italic;
-    text-align: left;
+.header__container-navbar-movible {
+    display: inline;
 }
 
-nav ul li {
-    display: none;
-}
-
-/* main-index*/
-
-/* .imagen-concentrador {
-    width: 60%;
-    margin-left: 20%;
-    margin-top: 60px;
-} */
+/* MAIN-INDEX*/
 
 main {
     grid-area: main;
@@ -73,22 +48,18 @@ main {
 
 .texto {
     text-align: center;
-    /* font-weight: bold;
-    font-size: 30px; */
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-/* main-productos */
+/* MAIN-PRODUCTOS */
 
 main h1 {
     text-align: center;
-    /* font-weight: bold;
-    font-size: 40px; */
     margin-top: 20px;
 }
 
-.main-productos-button {
+.main--button {
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
@@ -109,109 +80,97 @@ main h1 {
 .concentrador {
     margin-top: 30px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
 
-.resumen-foto-c {
+.concentrador__resumen-foto {
     margin-left: 10%;
-    display: flex;
-    align-items: center;
 }
 
-.explicación-foto-c {
+.concentrador__explicacion-foto {
     margin-left: 180px;
-    font-style: oblique;
-    display: flex;
-    align-items: center;
     font-style: oblique;
 }
 
 .cpap {
-    margin-left: 0%;
     margin-top: 30px;
-    display: flex;
-}
-
-.resumen-foto-cpap {
-    margin-left: 10%;
     display: flex;
     align-items: center;
 }
 
-.explicación-foto-cpap {
+.cpap__resumen-foto {
+    margin-left: 10%;   
+}
+
+.cpap__explicación-foto {
     margin-left: 260px;
     font-style: oblique;
-    display: flex;
-    align-items: center;
 }
 
-.Pañales-titulo {
+.Pañales__title {
     text-decoration: underline;
     margin-top: 80px;
     font-size: larger;
     font-weight: bold;
 }
 
-.Pañales {
-    margin-left: 0%;
+.Pañales__image-text {
     margin-top: 30px;
-    display: flex;
-}
-
-.Pañales p {
-    margin-left: 360px;
-    font-style: oblique;
     display: flex;
     align-items: center;
 }
 
-.Descartables-titulo {
+.Pañales__image-text p {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-style: oblique;
+
+}
+
+.Descartables__title {
     text-decoration: underline;
     margin-top: 80px;
     font-size: larger;
     font-weight: bold;
 }
 
-.imagen-guantes {
-    margin-left: 0%;
+.Descartables__image-guantes {
     margin-top: 30px;
     display: flex;
-}
-
-.imagen-guantes p {
-    margin-left: 340px;
-    font-style: oblique;
-    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-.imagen-jeringas {
-    margin-left: 0%;
-    margin-top: 30px;
-    display: flex;
+.Descartables__image-guantes p {
+    margin-right: 20px;
+    font-style: oblique;
 }
 
-.imagen-jeringas p {
-    margin-left: 360px;
-    font-style: oblique;
+.image__jeringas {
+    margin-top: 30px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-.imagen-apositos-gasas {
-    margin-left: 0px;
-    margin-top: 30px;
-    display: flex;
+.image__jeringas p {
+    margin-right: 20px;
+    font-style: oblique;
 }
 
-.imagen-apositos-gasas p {
-    margin-left: 460px;
-    font-style: oblique;
+.image__apositos-gasas {
+    margin-top: 30px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-/* main-contacto */
+.image__apositos-gasas p {
+    margin-right: 20px;
+    font-style: oblique;
+}
+
+/* MAIN-CONTACTO */
 
 .t-main {
     display: flex;
@@ -252,24 +211,18 @@ main div iframe {
     flex-direction: row;
 }
 
-/* aside */
+/* ASIDE */
 
 aside {
-    grid-area: aside;
-    background-color: chartreuse;
-}
-
-aside h2 {
+    background-image: url("../assets/img/pañales.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     text-align: center;
-    margin-bottom: 40px;
 }
 
-aside h4 {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-/* footer */
+/* FOOTER */
 
 footer {
     display: flex;
@@ -341,44 +294,21 @@ footer form button {
 }
 
 @media (min-width: 768px) {
-    /* header */
-    .enlaces {
-        display: flex;
-        flex-direction: row;
-        padding-top: 10px;
+    
+    /* BODY */
+
+    body {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main aside"
+    "footer footer footer";
+    }
+   /* ASIDE */
+
+    aside {
+        display: grid;
         justify-content: space-between;
     }
     
-    nav ul li {
-        display: inline;
-        margin-right: 50px;
-        font-size: 20px;
-    }
-    
-    nav ul li a {
-        text-decoration: underline;
-        color: black;
-    }
-
-    nav ul li a:hover {
-        color: blue;
-        font-style: oblique;
-        font-size: larger;
-    }
-
-    .posicion-telefono-mail1 {
-        display: flex;
-        margin-right: 10px;
-        align-items: center;
-    }
-    
-    .imagen-mail {
-        width: 40px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .header__container-navbar-movible {
-        display: none;
-    }
 }

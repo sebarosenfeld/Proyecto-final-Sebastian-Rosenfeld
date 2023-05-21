@@ -1,0 +1,68 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    text-align: end;
+    background-color: #a8c6fa;
+    justify-content: space-between;
+    grid-area: footer;
+
+    h1 {
+        text-align: left;
+    }
+}
+
+.consulta-telefono {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.icono-telefono-consulta {
+    width: 40px;
+}
+
+.consulta-mail {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.icono-mail-consulta {
+    width: 40px;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    justify-items: center;
+
+    input {
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        height: 30px;
+        width: 60px;
+        margin-left: 60px;
+    }
+}
+
+.form-consulta {
+    height: 60px;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    a img {
+        width: 80px;
+    }
+}

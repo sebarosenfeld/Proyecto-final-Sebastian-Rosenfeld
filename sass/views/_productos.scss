@@ -1,0 +1,114 @@
+main h1 {
+    text-align: flex;
+    margin-top: 20px;
+}
+
+.main--button {
+    display: flex;
+    justify-content: $justifycontent;
+    margin-top: 30px;
+
+    button:hover {
+        font-size: large;
+        font-style: oblique;
+    }
+}
+
+.equipos-de-oxigenoterapia {
+    text-decoration: underline;
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.concentrador {
+    margin-top: 30px;
+    display: flex;
+    align-items: $alignposition;
+
+    &__resumen-foto {
+        margin-left: 10%;
+    }
+
+    &__explicacion-foto {
+        margin-left: 180px;
+        font-style: oblique;
+    }
+}
+
+.cpap {
+    margin-top: 30px;
+    display: flex;
+    align-items: $alignposition;
+
+    &__resumen-foto {
+        margin-left: 10%;
+    }
+
+    &__explicacion-foto {
+            margin-left: 260px;
+            font-style: oblique;
+        }
+}
+
+.pañales__title {
+    text-decoration: underline;
+    margin-top: 80px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.Pañales__image-text {
+    margin-top: 30px;
+    display: flex;
+    align-items: $alignposition;
+        
+    p {
+            margin-left: 20px;
+            margin-right: 20px;
+            font-style: oblique;
+    }
+}
+
+.Descartables__title {
+    text-decoration: underline;
+    margin-top: 80px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.Descartables__image-guantes {
+    margin-top: 30px;
+    display: flex;
+    justify-content: $justifycontent;
+    align-items: $alignposition;
+
+    p {
+        margin-right: 20px;
+        font-style: oblique;
+    }
+}
+
+.image__jeringas {
+    margin-top: 30px;
+    display: flex;
+    justify-content: $justifycontent;
+    align-items: $alignposition;
+        
+    p {
+        margin-right: 20px;
+        font-style: oblique;            
+    }
+}
+
+.image__apositos-gasas {
+    margin-top: 30px;
+    display: flex;
+    justify-content: $justifycontent;
+    align-items: $alignposition;
+        
+    p {
+        margin-right: 20px;
+        font-style: oblique;            
+    }
+}
