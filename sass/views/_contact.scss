@@ -1,0 +1,35 @@
+main {
+    p {
+        font-weight: bold;
+        font-size: larger;
+    }
+
+    div {
+        margin-top: 80px;
+    }
+
+    .main__telefono {
+        padding-left: 10px;
+
+        &_image {
+            width: 40px;
+            margin-right: 10px;
+        }
+    }
+
+    .main__mail {
+        margin-top: 20px;
+        padding-left: 10px;
+
+        &-image {
+            width: 40px;
+            margin-right: 10px;
+        }
+    }
+} 
+    
+.mapa {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding-left: 10px;
+}

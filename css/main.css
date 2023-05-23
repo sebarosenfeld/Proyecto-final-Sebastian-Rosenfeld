@@ -26,12 +26,13 @@ main h1 {
   margin-top: 20px;
 }
 
-.main--button {
+.main__button {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 30px;
+  padding: 0 10px;
 }
-.main--button button:hover {
+.main__button button:hover {
   font-size: large;
   font-style: oblique;
 }
@@ -40,7 +41,7 @@ main h1 {
   text-decoration: underline;
   font-size: larger;
   font-weight: bold;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .concentrador {
@@ -65,7 +66,7 @@ main h1 {
   margin-left: 10%;
 }
 .cpap__explicacion-foto {
-  margin-left: 260px;
+  padding-left: 250px;
   font-style: oblique;
 }
 
@@ -76,13 +77,13 @@ main h1 {
   font-weight: bold;
 }
 
-.Pañales__image-text {
+.pañales__image-text {
   margin-top: 30px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
-.Pañales__image-text p {
-  margin-left: 20px;
+.pañales__image-text p {
   margin-right: 20px;
   font-style: oblique;
 }
@@ -97,7 +98,7 @@ main h1 {
 .Descartables__image-guantes {
   margin-top: 30px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .Descartables__image-guantes p {
@@ -108,7 +109,7 @@ main h1 {
 .image__jeringas {
   margin-top: 30px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .image__jeringas p {
@@ -119,12 +120,41 @@ main h1 {
 .image__apositos-gasas {
   margin-top: 30px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .image__apositos-gasas p {
   margin-right: 20px;
   font-style: oblique;
+}
+
+main p {
+  font-weight: bold;
+  font-size: larger;
+}
+main div {
+  margin-top: 80px;
+}
+main .main__telefono {
+  padding-left: 10px;
+}
+main .main__telefono_image {
+  width: 40px;
+  margin-right: 10px;
+}
+main .main__mail {
+  margin-top: 20px;
+  padding-left: 10px;
+}
+main .main__mail-image {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.mapa {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  padding-left: 10px;
 }
 
 header h1 a {

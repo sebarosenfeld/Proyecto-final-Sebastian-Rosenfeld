@@ -3,10 +3,11 @@ main h1 {
     margin-top: 20px;
 }
 
-.main--button {
+.main__button {
     display: flex;
     justify-content: $justifycontent;
     margin-top: 30px;
+    padding: 0 10px;
 
     button:hover {
         font-size: large;
@@ -18,7 +19,7 @@ main h1 {
     text-decoration: underline;
     font-size: larger;
     font-weight: bold;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .concentrador {
@@ -46,7 +47,7 @@ main h1 {
     }
 
     &__explicacion-foto {
-            margin-left: 260px;
+            padding-left: 250px;
             font-style: oblique;
         }
 }
@@ -58,13 +59,13 @@ main h1 {
     font-weight: bold;
 }
 
-.Pañales__image-text {
+.pañales__image-text {
     margin-top: 30px;
     display: flex;
+    justify-content: $justifycontent;
     align-items: $alignposition;
         
     p {
-            margin-left: 20px;
             margin-right: 20px;
             font-style: oblique;
     }
