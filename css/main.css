@@ -1,4 +1,10 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 main {
   margin: 0 0;
 }
@@ -157,6 +163,7 @@ header .header__container {
 }
 header .header__container-navbar-mobile {
   display: flex;
+  align-self: center;
 }
 header .header__container-info {
   display: none;
@@ -203,8 +210,6 @@ header .header__container-info {
   }
 }
 .footer {
-  flex-direction: row;
-  text-align: end;
   background-color: #a8c6fa;
 }
 .footer__text {
@@ -235,6 +240,7 @@ header .header__container-info {
   flex-direction: column;
   margin-top: 10px;
   justify-items: center;
+  width: 100px;
 }
 .footer form-consulta {
   height: 60px;
@@ -246,7 +252,7 @@ header .header__container-info {
 .footer form button {
   height: 30px;
   width: 60px;
-  margin-left: 60px;
+  margin-left: 20px;
 }
 
 .whatsapp {
@@ -261,10 +267,8 @@ header .header__container-info {
 @media (min-width: 768px) {
   .footer {
     display: flex;
-    flex-direction: row;
-    text-align: end;
     background-color: #a8c6fa;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .footer__text {
     text-align: left;
@@ -291,20 +295,16 @@ header .header__container-info {
   }
   .footer form {
     display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    justify-items: center;
-  }
-  .footer form-consulta {
-    height: 60px;
   }
   .footer form input {
     height: 40px;
+    width: 160px;
     margin-bottom: 10px;
+    text-align: center;
   }
   .footer form button {
     height: 30px;
     width: 60px;
-    margin-left: 60px;
+    margin-left: 50px;
   }
 }

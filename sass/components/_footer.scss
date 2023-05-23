@@ -1,10 +1,5 @@
 .footer {
-    // display: flex;
-    flex-direction: row;
-    text-align: end;
     background-color: #a8c6fa;
-    // justify-content: space-between;
-    // grid-area: footer;
 
     &__text {
         text-align: left;
@@ -39,6 +34,7 @@
         flex-direction: column;
         margin-top: 10px;
         justify-items: center;
+        width: 100px;
     
         &-consulta {
             height: 60px;
@@ -52,7 +48,7 @@
         button {
             height: 30px;
             width: 60px;
-            margin-left: 60px;
+            margin-left: 20px;
         }
     }
 }
@@ -68,13 +64,12 @@
 }
 
 @media (min-width: 768px) {
-    
     .footer {
         display: flex;
-        flex-direction: row;
-        text-align: end;
+        // flex-direction: row;
+        // text-align: end;
         background-color: #a8c6fa;
-        justify-content: space-between;
+        justify-content: space-around;
         // grid-area: footer;
     
         &__text {
@@ -107,23 +102,25 @@
     
         form {
             display: flex;
-            flex-direction: column;
-            margin-top: 10px;
-            justify-items: center;
+            // flex-direction: column;
+            // margin-top: 10px;
+            // justify-items: center;
         
-            &-consulta {
-                height: 60px;
-            }
+            // &-consulta {
+            //     height: 60px;
+            // }
         
             input {
                 height: 40px;
+                width: 160px;
                 margin-bottom: 10px;
+                text-align: center;
             }
         
             button {
                 height: 30px;
                 width: 60px;
-                margin-left: 60px;
+                margin-left: 50px;
             }
         }
     }
