@@ -9,33 +9,10 @@ body {
   font-family: "Courier New", Courier, monospace;
   background-color: #d4e3fc;
   display: grid;
-  grid-template-areas: "header header header" "main main aside" "footer footer footer";
 }
 
-header {
-  grid-area: header;
-}
-header h1 a {
-  text-decoration: none;
-  color: black;
-}
-header .header__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-header .header__container-navbar-mobile {
-  display: inline;
-}
-header .header__container-info {
-  display: none;
-}
-header .header__container-navbar-mobile {
-  display: inline;
-}
-
-main {
-  grid-area: main;
+.carousel {
+  padding: 20px;
 }
 
 .texto {
@@ -69,91 +46,197 @@ main h1 {
 .concentrador {
   margin-top: 30px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 .concentrador__resumen-foto {
   margin-left: 10%;
-  display: flex;
-  align-items: center;
 }
 .concentrador__explicacion-foto {
   margin-left: 180px;
   font-style: oblique;
-  display: flex;
-  align-items: center;
-  font-style: oblique;
-}
-.concentrador .cpap {
-  margin-left: 0%;
-  margin-top: 30px;
-  display: flex;
-}
-.concentrador .cpap__resumen-foto {
-  margin-left: 10%;
-  display: flex;
-  align-items: center;
-}
-.concentrador .cpap__explicacion-foto {
-  margin-left: 260px;
-  font-style: oblique;
-  display: flex;
-  align-items: center;
-}
-.concentrador .pañales__title {
-  text-decoration: underline;
-  margin-top: 80px;
-  font-size: larger;
-  font-weight: bold;
-}
-.concentrador .Pañales__image-text {
-  margin-left: 0%;
-  margin-top: 30px;
-  display: flex;
-}
-.concentrador .Pañales__image-text p {
-  margin-left: 360px;
-  font-style: oblique;
-  display: flex;
-  align-items: center;
-}
-.concentrador .Descartables__title {
-  text-decoration: underline;
-  margin-top: 80px;
-  font-size: larger;
-  font-weight: bold;
-}
-.concentrador .Descartables__image-guantes {
-  margin-left: 0%;
-  margin-top: 30px;
-  display: flex;
-}
-.concentrador .Descartables__image-guantes p {
-  margin-left: 340px;
-  font-style: oblique;
-  display: flex;
-  align-items: center;
-}
-.concentrador .image__jeringas {
-  margin-left: 0%;
-  margin-top: 30px;
-  display: flex;
-}
-.concentrador .image__jeringas p {
-  margin-left: 360px;
-  font-style: oblique;
-  display: flex;
-  align-items: center;
-}
-.concentrador .image__apositos-gasas {
-  margin-left: 0px;
-  margin-top: 30px;
-  display: flex;
-}
-.concentrador .image__apositos-gasas p {
-  margin-left: 460px;
-  font-style: oblique;
-  display: flex;
-  align-items: center;
 }
 
-/*# sourceMappingURL=main.css.map */
+.cpap {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+.cpap__resumen-foto {
+  margin-left: 10%;
+}
+.cpap__explicacion-foto {
+  margin-left: 260px;
+  font-style: oblique;
+}
+
+.pañales__title {
+  text-decoration: underline;
+  margin-top: 80px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.Pañales__image-text {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+.Pañales__image-text p {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-style: oblique;
+}
+
+.Descartables__title {
+  text-decoration: underline;
+  margin-top: 80px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.Descartables__image-guantes {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Descartables__image-guantes p {
+  margin-right: 20px;
+  font-style: oblique;
+}
+
+.image__jeringas {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.image__jeringas p {
+  margin-right: 20px;
+  font-style: oblique;
+}
+
+.image__apositos-gasas {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.image__apositos-gasas p {
+  margin-right: 20px;
+  font-style: oblique;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: black;
+}
+header .header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header .header__container-navbar-mobile {
+  display: flex;
+}
+header .header__container-info {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .header__container-info {
+    display: inline;
+    padding-top: 20px;
+  }
+  .header__container-info-phone-mail {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .image__header-phone {
+    width: 40px;
+    margin-right: 5px;
+  }
+  .image__header-mail {
+    width: 40px;
+    margin-right: 5px;
+    margin-left: 10px;
+  }
+  nav {
+    margin-top: 50px;
+  }
+  nav ul li {
+    display: inline;
+    margin-right: 50px;
+    font-size: 20px;
+  }
+  nav ul li a {
+    text-decoration: underline;
+    color: black;
+  }
+  nav ul li a:hover {
+    color: blue;
+    font-style: oblique;
+    font-size: larger;
+  }
+  .header__container-navbar-movible {
+    display: none;
+  }
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  text-align: end;
+  background-color: #a8c6fa;
+  justify-content: space-between;
+}
+.footer__text {
+  text-align: left;
+}
+.footer__consulta-telefono {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.footer__consulta-telefono-icono {
+  width: 40px;
+}
+.footer__consulta-mail {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  align-items: center;
+  margin-top: 10px;
+}
+.footer__consulta-mail-icono {
+  width: 40px;
+}
+.footer form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  justify-items: center;
+}
+.footer form-consulta {
+  height: 60px;
+}
+.footer form input {
+  height: 40px;
+  margin-bottom: 10px;
+}
+.footer form button {
+  height: 30px;
+  width: 60px;
+  margin-left: 60px;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.whatsapp a img {
+  width: 80px;
+}

@@ -8,19 +8,23 @@ body {
     font-family: 'Courier New', Courier, monospace;
     background-color: #d4e3fc;
     display: grid;
-    grid-template-areas: 
-    "header header header"
-    "main main aside"
-    "footer footer footer";
+    // grid-template-areas: 
+    // "header header header"
+    // "main main aside"
+    // "footer footer footer";
 }
 
 
-main {
-    grid-area: main;
+// main {
+//     grid-area: main;
+// }
+
+.carousel {
+    padding: 20px;
 }
 
 .texto {
-    text-align: flex;
+    text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
 }

@@ -1,5 +1,5 @@
 header {
-    grid-area: header;
+    // grid-area: header;
 
     h1 a {
         text-decoration: none;
@@ -7,28 +7,24 @@ header {
     }
 
     .header__container {
-        display: flex
-        flex-direction: row
+        display: flex;
+        flex-direction: row;
         justify-content: space-between;
 
         &-navbar-mobile {
-            display: block;
+            display: flex;
         }
 
         &-info {
             display: none;
         }
-
-        &-navbar-mobile {
-            display: inline;
-        }
     }
 }
 
 @media (min-width: 768px) {
-    header {
-        grid-area: header;
-    }
+    // header {
+    //     grid-area: header;
+    // }
 
     .header__container-info {
         display: inline;

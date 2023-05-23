@@ -1,60 +1,60 @@
-footer {
+.footer {
     display: flex;
     flex-direction: row;
     text-align: end;
     background-color: #a8c6fa;
     justify-content: space-between;
-    grid-area: footer;
+    // grid-area: footer;
 
-    h1 {
+    &__text {
         text-align: left;
     }
-}
 
-.consulta-telefono {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.icono-telefono-consulta {
-    width: 40px;
-}
-
-.consulta-mail {
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.icono-mail-consulta {
-    width: 40px;
-}
-
-footer form {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    justify-items: center;
-
-    input {
-        height: 40px;
-        margin-bottom: 10px;
+    &__consulta-telefono {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        margin-top: 20px;
+    
+        &-icono {
+            width: 40px;
+        }
     }
 
-    button {
-        height: 30px;
-        width: 60px;
-        margin-left: 60px;
+    &__consulta-mail {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+        margin-top: 10px;
+    
+        &-icono {
+            width: 40px;
+        }
     }
-}
 
-.form-consulta {
-    height: 60px;
+    form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        justify-items: center;
+    
+        &-consulta {
+            height: 60px;
+        }
+    
+        input {
+            height: 40px;
+            margin-bottom: 10px;
+        }
+    
+        button {
+            height: 30px;
+            width: 60px;
+            margin-left: 60px;
+        }
+    }
 }
 
 .whatsapp {
@@ -66,3 +66,7 @@ footer form {
         width: 80px;
     }
 }
+
+// @media (min-width: 768px) {
+
+// }

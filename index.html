@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="widht=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/img/historia_w.jpg" type="image/x-icon" />
-    <title>WIOR</title>
+    <meta name="description" content="Todo lo que necesite de insumos médicos, desde equipos de oxigenoterapia hasta pañales, gasas, jeringas y más" />
+    <title>WIOR-insumos hospitalarios</title>
     <!-- CSS original -->
     <!-- <link rel="stylesheet" href="./css/style.css" /> -->
     <!-- archivo de SASS -->
     <link rel="stylesheet" href="./css/main.css" />
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" />
+    <link rel="shortcut icon" href="./assets/img/historia_w.jpg" type="image/x-icon" />
 </head>
 
 <body>
@@ -41,16 +42,19 @@
                             <a href="./pages/contacto.html">contacto</a>
                         </li>
                     </ul>
-                    <div class="header__container-navbar-movible">
-                        <span>icono</span>
-                    </div>
+                    <!-- <div class="header__container-navbar-movible">
+                        <span>&#9776; icono</span>
+                    </div> -->
                 </nav>
+            </div>
+            <div class="header__container-navbar-movible">
+                <span>icono</span>
             </div>
         </section>
     </header>
 
     <main class="bg-primary-subtle">
-        <section class="container">
+        <section class="container carousel">
              <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -73,32 +77,31 @@
             </button>
           </div>
         </section>
-        <!-- <img class="imagen-concentrador" src="./assets/img/foto concentrador.jpg" alt="concentrador"/> -->
         <p class="texto lead display-6">Siempre al servicio del cliente brindando la mejor atención posible</p>
     </main>
 
-    <aside class="bg-warning-subtle">
+    <!-- <aside class="bg-warning-subtle">
         <h2>José augusto fletes</h3>
         <h4>Tu flete de confianza</h4>
         <p>para cualquier mudanza que necesites contactanos al 1122334455</p>
-    </aside>
+    </aside> -->
 
-    <footer>
-        <div class="footer-text">
+    <footer class="footer">
+        <div class="footer__text">
             <h1>Envíanos tu consulta</h1>
-            <div class="consulta-telefono">
-                 <img class="icono-telefono-consulta" src="./assets/img/telefono.png" alt="teléfono"/>
+            <div class="footer__consulta-telefono">
+                 <img class="footer__consulta-telefono-icono" src="./assets/img/telefono.png" alt="teléfono"/>
                  <p>11-4428-0904</p>
             </div>
-            <div class="consulta-mail">
-                <img class="icono-mail-consulta" src="./assets/img/mail.png" alt="mail"/>
+            <div class="footer__consulta-mail">
+                <img class="footer__consulta-mail-icono" src="./assets/img/mail.png" alt="mail"/>
                 <p>andyrosenfeld46@gmail.com</p>
             </div>
         </div>
         <form action="input">
-                <input class="footer--form-name" placeholder="nombre"/>
+                <input class="footer__form-name" placeholder="nombre"/>
                 <input placeholder="telefono"/>
-                <input class="form-consulta" placeholder="consulta"/>
+                <input class="footer__form-consulta" placeholder="consulta"/>
                 <button>Enviar</button>
         </form>    
     </footer>

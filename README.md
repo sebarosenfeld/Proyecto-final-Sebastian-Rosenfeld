@@ -1,3 +1,3 @@
 # proyecto Wior
 
-Esta es **la segunda pre entrega** del proyecto final.
+Esta es **la tercera pre entrega** del proyecto final.
