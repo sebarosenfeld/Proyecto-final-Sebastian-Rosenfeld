@@ -1,8 +1,8 @@
-// * {
-//     margin: 0;
-//     padding: 0;
-//     box-sizing: border-box;
-// }
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 // body {
 //     font-family: 'Courier New', Courier, monospace;
@@ -18,9 +18,11 @@
 // main {
 //     grid-area: main;
 // }
-main {
-    margin: 0 0;
+
+.carousel {
+    padding-top: 20px;
 }
+
 .texto {
     text-align: center;
     margin-top: 50px;

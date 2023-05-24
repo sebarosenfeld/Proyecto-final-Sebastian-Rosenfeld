@@ -1,12 +1,12 @@
 @charset "UTF-8";
-* {
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-main {
-  margin: 0 0;
+.carousel {
+  padding-top: 20px;
 }
 
 .texto {
@@ -17,7 +17,6 @@ main {
 
 main h1 {
   text-align: center;
-  margin-top: 20px;
 }
 
 .main__button {
@@ -127,7 +126,7 @@ main p {
   font-weight: bold;
   font-size: larger;
 }
-main div {
+main .main__info {
   margin-top: 80px;
 }
 main .main__telefono {
@@ -189,6 +188,7 @@ header .header__container-info {
     margin-left: 10px;
   }
   nav {
+    display: inline;
     margin-top: 50px;
   }
   nav ul li {
