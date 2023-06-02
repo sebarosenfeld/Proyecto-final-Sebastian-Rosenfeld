@@ -1,0 +1,118 @@
+.footer {
+    margin-top: 10px;
+    background-color: #a8c6fa;
+
+    &__text {
+        text-align: left;
+    }
+
+    &__consulta-telefono {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        margin-top: 20px;
+    
+        &-icono {
+            width: 40px;
+        }
+    }
+
+    &__consulta-mail {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+        margin-top: 10px;
+    
+        &-icono {
+            width: 40px;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        justify-items: center;
+        width: 100px;
+    
+        // &-consulta {
+        //     height: 60px;
+        // }
+    
+        input {
+            height: 40px;
+            margin-bottom: 10px;
+        }
+    
+        button {
+            height: 30px;
+            width: 60px;
+            margin-left: 20px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .footer {
+        display: flex;
+        // flex-direction: row;
+        // text-align: end;
+        background-color: #a8c6fa;
+        justify-content: space-around;
+        // grid-area: footer;
+    
+        &__text {
+            text-align: left;
+        }
+    
+        &__consulta-telefono {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            align-items: center;
+            margin-top: 20px;
+        
+            &-icono {
+                width: 40px;
+            }
+        }
+    
+        &__consulta-mail {
+            display: flex;
+            flex-direction: row;
+            text-align: left;
+            align-items: center;
+            margin-top: 10px;
+        
+            &-icono {
+                width: 40px;
+            }
+        }
+    
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            justify-items: center;
+        
+            // &-consulta {
+            //     height: 80px;
+            // }
+        
+            input {
+                height: 30px;
+                width: 160px;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+        
+            button {
+                height: 30px;
+                width: 100px;
+                margin-left: 30px;
+            }
+        }
+    }
+}

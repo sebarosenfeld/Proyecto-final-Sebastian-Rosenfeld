@@ -1,0 +1,315 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.carousel {
+  padding-top: 20px;
+}
+
+.texto {
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  main h1 {
+    text-align: center;
+    padding-top: 20px;
+  }
+  .main__button {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 0 10px;
+  }
+  .main__button button:hover {
+    font-size: large;
+    font-style: oblique;
+  }
+  .equipos-de-oxigenoterapia {
+    text-decoration: underline;
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 50px;
+  }
+  .concentrador__resumen-foto {
+    text-decoration: underline;
+  }
+  .concentrador div {
+    display: flex;
+  }
+  .concentrador div p {
+    padding-left: 40px;
+  }
+  .cpap__resumen-foto {
+    margin-top: 20px;
+    text-decoration: underline;
+  }
+  .cpap div {
+    display: flex;
+  }
+  .cpap div p {
+    padding-left: 40px;
+  }
+  .pañales__title {
+    text-decoration: underline;
+    margin-top: 80px;
+    font-size: larger;
+    font-weight: bold;
+  }
+  .pañales__image-text {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .pañales__image-text p {
+    margin-right: 20px;
+    font-style: oblique;
+  }
+  .Descartables__title {
+    text-decoration: underline;
+    margin-top: 80px;
+    font-size: larger;
+    font-weight: bold;
+  }
+  .Descartables__image-guantes {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Descartables__image-guantes p {
+    margin-right: 20px;
+    font-style: oblique;
+  }
+  .image__jeringas {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .image__jeringas p {
+    margin-right: 20px;
+    font-style: oblique;
+  }
+  .image__apositos-gasas {
+    margin-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .image__apositos-gasas p {
+    margin-right: 20px;
+    font-style: oblique;
+  }
+}
+main h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.main__button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 0 10px;
+}
+.main__button button:hover {
+  font-size: large;
+  font-style: oblique;
+}
+
+main p {
+  font-weight: bold;
+  font-size: larger;
+  padding-top: 80px;
+}
+
+@media (min-width: 768px) {
+  main p {
+    font-weight: bold;
+    font-size: larger;
+    padding-top: 20px;
+  }
+  main .main__info {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+  main .main__contact-phone {
+    padding-left: 10px;
+  }
+  main .main__contact-phone p {
+    padding-top: 0;
+  }
+  main .main__contact-phone-image {
+    width: 40px;
+    margin-right: 10px;
+  }
+  main .main__contact-mail {
+    margin-top: 50px;
+    padding-left: 10px;
+  }
+  main .main__contact-mail p {
+    padding-top: 0;
+  }
+  main .main__contact-mail-image {
+    width: 40px;
+    margin-right: 10px;
+  }
+  main input {
+    display: flex;
+    margin: 10px;
+  }
+  main button {
+    margin-left: 50px;
+  }
+  .mapa {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding-left: 10px;
+  }
+}
+header h1 a {
+  text-decoration: none;
+  color: black;
+}
+header .header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .header__container-info {
+    display: inline;
+    padding-top: 20px;
+    align-self: flex-end;
+  }
+  nav {
+    display: inline;
+    margin-top: 50px;
+  }
+  nav ul li {
+    display: inline;
+    margin-right: 50px;
+    font-size: 20px;
+  }
+  nav ul li a {
+    text-decoration: underline;
+    color: black;
+  }
+  nav ul li a:hover {
+    color: blue;
+    font-style: oblique;
+    font-size: larger;
+  }
+  .header__container-navbar-movible {
+    display: none;
+  }
+}
+.footer {
+  margin-top: 10px;
+  background-color: #a8c6fa;
+}
+.footer__text {
+  text-align: left;
+}
+.footer__consulta-telefono {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.footer__consulta-telefono-icono {
+  width: 40px;
+}
+.footer__consulta-mail {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  align-items: center;
+  margin-top: 10px;
+}
+.footer__consulta-mail-icono {
+  width: 40px;
+}
+.footer form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  justify-items: center;
+  width: 100px;
+}
+.footer form input {
+  height: 40px;
+  margin-bottom: 10px;
+}
+.footer form button {
+  height: 30px;
+  width: 60px;
+  margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    background-color: #a8c6fa;
+    justify-content: space-around;
+  }
+  .footer__text {
+    text-align: left;
+  }
+  .footer__consulta-telefono {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .footer__consulta-telefono-icono {
+    width: 40px;
+  }
+  .footer__consulta-mail {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .footer__consulta-mail-icono {
+    width: 40px;
+  }
+  .footer form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    justify-items: center;
+  }
+  .footer form input {
+    height: 30px;
+    width: 160px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .footer form button {
+    height: 30px;
+    width: 100px;
+    margin-left: 30px;
+  }
+}
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.whatsapp a img {
+  width: 80px;
+}

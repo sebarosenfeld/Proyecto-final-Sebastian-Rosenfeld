@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// body {
+//     font-family: 'Courier New', Courier, monospace;
+//     background-color: #d4e3fc;
+//     display: grid;
+//     // grid-template-areas: 
+//     // "header header header"
+//     // "main main aside"
+//     // "footer footer footer";
+// }
+
+
+// main {
+//     grid-area: main;
+// }
+
+.carousel {
+    padding-top: 20px;
+}
+
+.texto {
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}

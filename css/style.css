@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #d4e3fc;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "aside aside aside"
+    "footer footer footer";
+}
+
+/* HEADER */
+
+header {
+    grid-area: header;
+}
+
+h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.header__container {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.header__container-info {
+    display: none;
+}
+
+.header__container-navbar-movible {
+    display: inline;
+}
+
+/* MAIN-INDEX*/
+
+main {
+    grid-area: main;
+}
+
+.texto {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* MAIN-PRODUCTOS */
+
+main h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main--button {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.main-productos-button button:hover {
+    font-size: large;
+    font-style: oblique;
+}
+
+.Equipos-de-oxigenoterapia {
+    text-decoration: underline;
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.concentrador {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.concentrador__resumen-foto {
+    margin-left: 10%;
+}
+
+.concentrador__explicacion-foto {
+    margin-left: 180px;
+    font-style: oblique;
+}
+
+.cpap {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.cpap__resumen-foto {
+    margin-left: 10%;   
+}
+
+.cpap__explicación-foto {
+    margin-left: 260px;
+    font-style: oblique;
+}
+
+.Pañales__title {
+    text-decoration: underline;
+    margin-top: 80px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.Pañales__image-text {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.Pañales__image-text p {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-style: oblique;
+
+}
+
+.Descartables__title {
+    text-decoration: underline;
+    margin-top: 80px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.Descartables__image-guantes {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Descartables__image-guantes p {
+    margin-right: 20px;
+    font-style: oblique;
+}
+
+.image__jeringas {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image__jeringas p {
+    margin-right: 20px;
+    font-style: oblique;
+}
+
+.image__apositos-gasas {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image__apositos-gasas p {
+    margin-right: 20px;
+    font-style: oblique;
+}
+
+/* MAIN-CONTACTO */
+
+.t-main {
+    display: flex;
+    flex-direction: column;
+}
+
+main p {
+    font-weight: bold;
+    font-size: larger;
+}
+
+main div {
+    margin-left: 0px;
+    margin-top: 80px;
+}
+
+.m-main {
+    margin-top: 20px;
+}
+    
+.teléfono {
+    width: 40px;
+    margin-right: 10px;
+}
+    
+.mail {
+    width: 40px;
+    margin-right: 10px;
+}
+    
+.mapa {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+main div iframe {
+    display: flex;
+    flex-direction: row;
+}
+
+/* ASIDE */
+
+aside {
+    background-image: url("../assets/img/pañales.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    text-align: end;
+    background-color: #a8c6fa;
+    justify-content: space-between;
+    grid-area: footer;
+}
+
+footer h1 {
+    text-align: left;
+}
+
+.consulta-telefono {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.icono-telefono-consulta {
+    width: 40px;
+}
+
+.consulta-mail {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.icono-mail-consulta {
+    width: 40px;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    justify-items: center;
+}
+
+footer form input {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.form-consulta {
+    height: 60px;
+}
+
+footer form button {
+    height: 30px;
+    width: 60px;
+    margin-left: 60px;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.whatsapp a img {
+    width: 80px;
+}
+
+@media (min-width: 768px) {
+    
+    /* BODY */
+
+    body {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main aside"
+    "footer footer footer";
+    }
+   /* ASIDE */
+
+    aside {
+        display: grid;
+        justify-content: space-between;
+    }
+    
+}

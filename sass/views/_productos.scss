@@ -1,0 +1,137 @@
+@media (min-width:768px) {
+
+    main h1 {
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+    .main__button {
+        display: flex;
+        justify-content: $justifycontent;
+        margin-top: 30px;
+        padding: 0 10px;
+    
+        button:hover {
+            font-size: large;
+            font-style: oblique;
+        }
+    }
+    
+    .equipos-de-oxigenoterapia {
+        text-decoration: underline;
+        font-size: larger;
+        font-weight: bold;
+        margin-top: 50px;
+    }
+
+    .concentrador {
+
+        &__resumen-foto {
+            text-decoration: underline;
+        }
+        
+        div {
+            display: flex;
+
+            p {
+                padding-left: 40px;
+            }
+        }
+    }
+    
+    .cpap {
+
+        &__resumen-foto {
+            margin-top: 20px;
+            text-decoration: underline;
+        }
+        
+        div {
+            display: flex;
+
+            p {
+                padding-left: 40px;
+            }
+        }
+    }
+    
+    .pañales__title {
+        text-decoration: underline;
+        margin-top: 80px;
+        font-size: larger;
+        font-weight: bold;
+    }
+    
+    .pañales__image-text {
+        margin-top: 30px;
+        display: flex;
+        justify-content: $justifycontent;
+        align-items: $alignposition;
+            
+        p {
+                margin-right: 20px;
+                font-style: oblique;
+        }
+    }
+    
+    .Descartables__title {
+        text-decoration: underline;
+        margin-top: 80px;
+        font-size: larger;
+        font-weight: bold;
+    }
+    
+    .Descartables__image-guantes {
+        margin-top: 30px;
+        display: flex;
+        justify-content: $justifycontent;
+        align-items: $alignposition;
+    
+        p {
+            margin-right: 20px;
+            font-style: oblique;
+        }
+    }
+    
+    .image__jeringas {
+        margin-top: 30px;
+        display: flex;
+        justify-content: $justifycontent;
+        align-items: $alignposition;
+            
+        p {
+            margin-right: 20px;
+            font-style: oblique;            
+        }
+    }
+    
+    .image__apositos-gasas {
+        margin-top: 30px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: $justifycontent;
+        align-items: $alignposition;
+            
+        p {
+            margin-right: 20px;
+            font-style: oblique;            
+        }
+    }
+}
+
+main h1 {
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+    .main__button {
+        display: flex;
+        justify-content: $justifycontent;
+        margin-top: 30px;
+        padding: 0 10px;
+    
+        button:hover {
+            font-size: large;
+            font-style: oblique;
+        }
+    }
