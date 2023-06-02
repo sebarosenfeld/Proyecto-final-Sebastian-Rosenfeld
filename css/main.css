@@ -125,32 +125,52 @@ main h1 {
 main p {
   font-weight: bold;
   font-size: larger;
-}
-main .main__info {
-  margin-top: 80px;
-}
-main .main__telefono {
-  padding-left: 10px;
-}
-main .main__telefono_image {
-  width: 40px;
-  margin-right: 10px;
-}
-main .main__mail {
-  margin-top: 20px;
-  padding-left: 10px;
-}
-main .main__mail-image {
-  width: 40px;
-  margin-right: 10px;
+  padding-top: 80px;
 }
 
-.mapa {
-  margin-top: 10px;
-  margin-bottom: 50px;
-  padding-left: 10px;
+@media (min-width: 768px) {
+  main p {
+    font-weight: bold;
+    font-size: larger;
+    padding-top: 20px;
+  }
+  main .main__info {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+  main .main__contact-phone {
+    padding-left: 10px;
+  }
+  main .main__contact-phone p {
+    padding-top: 0;
+  }
+  main .main__contact-phone-image {
+    width: 40px;
+    margin-right: 10px;
+  }
+  main .main__contact-mail {
+    margin-top: 50px;
+    padding-left: 10px;
+  }
+  main .main__contact-mail p {
+    padding-top: 0;
+  }
+  main .main__contact-mail-image {
+    width: 40px;
+    margin-right: 10px;
+  }
+  .mapa {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding-left: 10px;
+  }
 }
-
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
 header h1 a {
   text-decoration: none;
   color: black;
@@ -163,6 +183,8 @@ header .header__container {
 header .header__container-navbar-mobile {
   display: flex;
   align-self: center;
+  font-size: 30px;
+  color: black;
 }
 header .header__container-info {
   display: none;
@@ -255,15 +277,6 @@ header .header__container-info {
   margin-left: 20px;
 }
 
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-}
-.whatsapp a img {
-  width: 80px;
-}
-
 @media (min-width: 768px) {
   .footer {
     display: flex;
@@ -307,4 +320,12 @@ header .header__container-info {
     width: 60px;
     margin-left: 50px;
   }
+}
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.whatsapp a img {
+  width: 80px;
 }

@@ -2,34 +2,105 @@ main {
     p {
         font-weight: bold;
         font-size: larger;
+        padding-top: 80px;
     }
-
-    .main__info {
-        margin-top: 80px;
-    }
-
-    .main__telefono {
-        padding-left: 10px;
-
-        &_image {
-            width: 40px;
-            margin-right: 10px;
-        }
-    }
-
-    .main__mail {
-        margin-top: 20px;
-        padding-left: 10px;
-
-        &-image {
-            width: 40px;
-            margin-right: 10px;
-        }
-    }
-} 
-    
-.mapa {
-    margin-top: 10px;
-    margin-bottom: 50px;
-    padding-left: 10px;
 }
+
+@media (min-width:768px) {
+    main {
+        p {
+            font-weight: bold;
+            font-size: larger;
+            padding-top: 20px;
+        }
+    
+        .main__info {
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        .main__contact {
+            &-phone {
+                padding-left: 10px;
+    
+                p {
+                    padding-top: 0;
+                }
+    
+                &-image {
+                    width: 40px;
+                    margin-right: 10px;
+                }
+            }
+    
+            &-mail {
+                margin-top: 50px;
+                padding-left: 10px;
+    
+                p {
+                    padding-top: 0;
+                }
+    
+                &-image {
+                width: 40px;
+                margin-right: 10px;
+                }
+            }
+        }
+    } 
+        
+    .mapa {
+        margin-top: 10px;
+        margin-bottom: 50px;
+        padding-left: 10px;
+    }
+}
+// main {
+//     p {
+//         font-weight: bold;
+//         font-size: larger;
+//         padding-top: 20px;
+//     }
+
+//     .main__info {
+//         margin-top: 80px;
+//         display: flex;
+//         justify-content: space-between;
+//     }
+
+//     .main__contact {
+//         &-phone {
+//             padding-left: 10px;
+
+//             p {
+//                 padding-top: 0;
+//             }
+
+//             &-image {
+//                 width: 40px;
+//                 margin-right: 10px;
+//             }
+//         }
+
+//         &-mail {
+//             margin-top: 50px;
+//             padding-left: 10px;
+
+//             p {
+//                 padding-top: 0;
+//             }
+
+//             &-image {
+//             width: 40px;
+//             margin-right: 10px;
+//             }
+//         }
+//     }
+// } 
+    
+// .mapa {
+//     margin-top: 10px;
+//     margin-bottom: 50px;
+//     padding-left: 10px;
+// }

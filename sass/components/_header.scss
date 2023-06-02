@@ -1,5 +1,8 @@
 header {
     // grid-area: header;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 
     h1 a {
         text-decoration: none;
@@ -14,6 +17,8 @@ header {
         &-navbar-mobile {
             display: flex;
             align-self: center;
+            font-size: 30px;
+            color: black;
         }
 
         &-info {
