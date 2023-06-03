@@ -10,69 +10,95 @@ header {
         flex-direction: row;
         justify-content: space-between;
 
-        // &-info {
-        //     display: none;
-        // }
+        &-info {
+            display: none;
+        }
         
-        // &-navbar-mobile {
-        //     display: flex;
-        //     align-self: center;
-        //     font-size: 30px;
-        //     color: black;
-        // }
-
-       
+        &-navbar-mobile {
+            display: flex;
+            align-self: center;
+            font-size: 30px;
+            color: black;
+        }
     }
 }
 
 @media (min-width: 768px) {
 
-    .header__container-info {
-        display: inline;
-        padding-top: 20px;
-        align-self: flex-end;
-
+    header {
+        
+        .header__container-info {
+            display: inline;
+            padding-top: 20px;
+            align-self: flex-end;
         // &-phone-mail {
         //     display: flex;
         //     align-items: center;
         //     margin-right: 10px;
         // }
-    }
-    
-    // .image__header-phone {
-    //     width: 40px;
-    //     margin-right: 5px;
-    // }
-    
-    // .image__header-mail {
-    //     width: 40px;
-    //     margin-right: 5px;
-    //     margin-left: 10px;
-    // }
-    
-    nav {
-        display: inline;
-        margin-top: 50px;
+        }
 
-        ul li {
+        nav {
             display: inline;
-            margin-right: 50px;
-            font-size: 20px;
-
-            a {
-                text-decoration: underline;
-                color: black;
+            margin-top: 50px;
+    
+            ul li {
+                display: inline;
+                margin-right: 20px;
+                font-size: 20px;
+    
+                a {
+                    text-decoration: underline;
+                    color: black;
+                }
             }
+        }
+    
+        nav ul li a:hover {
+            color: blue;
+            font-style: oblique;
+            font-size: larger;
+        }
+    
+        &__container-navbar-movible {
+            display: none;
         }
     }
 
-    nav ul li a:hover {
-        color: blue;
-        font-style: oblique;
-        font-size: larger;
-    }
+    // // .image__header-phone {
+    // //     width: 40px;
+    // //     margin-right: 5px;
+    // // }
+    
+    // // .image__header-mail {
+    // //     width: 40px;
+    // //     margin-right: 5px;
+    // //     margin-left: 10px;
+    // // }
+    
+    // nav {
+    //     display: inline;
+    //     margin-top: 50px;
 
-    .header__container-navbar-movible {
-        display: none;
-    }
+    //     ul li {
+    //         display: inline;
+    //         margin-right: 50px;
+    //         font-size: 20px;
+
+    //         a {
+    //             text-decoration: underline;
+    //             color: black;
+    //         }
+    //     }
+    // }
+
+    // nav ul li a:hover {
+    //     color: blue;
+    //     font-style: oblique;
+    //     font-size: larger;
+    // }
+
+    // .header__container-navbar-movible {
+    //     display: none;
+    // }
 }

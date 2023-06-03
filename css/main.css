@@ -1,18 +1,13 @@
 @charset "UTF-8";
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .carousel {
   padding-top: 20px;
 }
 
 .texto {
   text-align: center;
-  margin-top: 50px;
+  padding-top: 40px;
   padding-bottom: 20px;
+  margin: 0;
 }
 
 @media (min-width: 768px) {
@@ -153,7 +148,6 @@ main p {
     margin-right: 10px;
   }
   main .main__contact-mail {
-    margin-top: 50px;
     padding-left: 10px;
   }
   main .main__contact-mail p {
@@ -185,32 +179,41 @@ header .header__container {
   flex-direction: row;
   justify-content: space-between;
 }
+header .header__container-info {
+  display: none;
+}
+header .header__container-navbar-mobile {
+  display: flex;
+  align-self: center;
+  font-size: 30px;
+  color: black;
+}
 
 @media (min-width: 768px) {
-  .header__container-info {
+  header .header__container-info {
     display: inline;
     padding-top: 20px;
     align-self: flex-end;
   }
-  nav {
+  header nav {
     display: inline;
     margin-top: 50px;
   }
-  nav ul li {
+  header nav ul li {
     display: inline;
-    margin-right: 50px;
+    margin-right: 20px;
     font-size: 20px;
   }
-  nav ul li a {
+  header nav ul li a {
     text-decoration: underline;
     color: black;
   }
-  nav ul li a:hover {
+  header nav ul li a:hover {
     color: blue;
     font-style: oblique;
     font-size: larger;
   }
-  .header__container-navbar-movible {
+  header__container-navbar-movible {
     display: none;
   }
 }
@@ -263,6 +266,7 @@ header .header__container {
     display: flex;
     background-color: #a8c6fa;
     justify-content: space-around;
+    margin: 0;
   }
   .footer__text {
     text-align: left;
