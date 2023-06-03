@@ -10,6 +10,92 @@
   margin: 0;
 }
 
+main h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.main__button {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  padding: 0 10px;
+}
+.main__button button:hover {
+  font-size: large;
+  font-style: oblique;
+}
+
+.equipos-de-oxigenoterapia {
+  text-decoration: underline;
+  font-size: larger;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.concentrador__resumen-foto {
+  text-decoration: underline;
+}
+.concentrador div p {
+  text-align: justify;
+}
+
+.cpap__resumen-foto {
+  margin-top: 20px;
+  text-decoration: underline;
+}
+.cpap div p {
+  text-align: justify;
+}
+
+.pañales__title {
+  text-decoration: underline;
+  margin-top: 80px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.pañales__image-text {
+  margin-top: 30px;
+}
+.pañales__image-text p {
+  margin-right: 20px;
+  font-style: oblique;
+  text-align: justify;
+}
+
+.Descartables__title {
+  text-decoration: underline;
+  margin-top: 80px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.Descartables__image-guantes {
+  margin-top: 30px;
+}
+.Descartables__image-guantes p {
+  margin-right: 20px;
+  font-style: oblique;
+}
+
+.image__jeringas {
+  margin-top: 30px;
+}
+.image__jeringas p {
+  margin-right: 20px;
+  font-style: oblique;
+}
+
+.image__apositos-gasas {
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+.image__apositos-gasas p {
+  margin-right: 20px;
+  font-style: oblique;
+}
+
 @media (min-width: 768px) {
   main h1 {
     text-align: center;
@@ -104,26 +190,49 @@
     font-style: oblique;
   }
 }
-main h1 {
-  text-align: center;
-  padding-top: 20px;
+main {
+  margin: 0;
 }
-
-.main__button {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
-  padding: 0 10px;
-}
-.main__button button:hover {
-  font-size: large;
-  font-style: oblique;
-}
-
 main p {
   font-weight: bold;
   font-size: larger;
-  padding-top: 80px;
+  padding-top: 20px;
+}
+main .main__info {
+  margin-top: 40px;
+}
+main .main__contact-phone {
+  padding-left: 10px;
+}
+main .main__contact-phone p {
+  padding-top: 0;
+}
+main .main__contact-phone-image {
+  width: 40px;
+  margin-right: 10px;
+}
+main .main__contact-mail {
+  padding-left: 10px;
+}
+main .main__contact-mail p {
+  padding-top: 0;
+}
+main .main__contact-mail-image {
+  width: 40px;
+  margin-right: 10px;
+}
+main input {
+  display: flex;
+  margin: 10px;
+}
+main button {
+  margin-left: 50px;
+}
+
+.mapa {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: auto;
 }
 
 @media (min-width: 768px) {
@@ -165,9 +274,7 @@ main p {
     margin-left: 50px;
   }
   .mapa {
-    margin-top: 10px;
     margin-bottom: 50px;
-    padding-left: 10px;
   }
 }
 header h1 a {
@@ -182,8 +289,7 @@ header .header__container {
 header .header__container-info {
   display: none;
 }
-header .header__container-navbar-mobile {
-  display: flex;
+header .header__container-navbar-mobile i {
   align-self: center;
   font-size: 30px;
   color: black;
@@ -192,16 +298,11 @@ header .header__container-navbar-mobile {
 @media (min-width: 768px) {
   header .header__container-info {
     display: inline;
-    padding-top: 20px;
     align-self: flex-end;
-  }
-  header nav {
-    display: inline;
-    margin-top: 50px;
   }
   header nav ul li {
     display: inline;
-    margin-right: 20px;
+    padding-right: 40px;
     font-size: 20px;
   }
   header nav ul li a {
@@ -217,93 +318,91 @@ header .header__container-navbar-mobile {
     display: none;
   }
 }
-.footer {
-  margin-top: 10px;
+footer {
   background-color: #a8c6fa;
 }
-.footer__text {
+footer .footer__text {
   text-align: left;
 }
-.footer__consulta-telefono {
+footer .footer__consulta-telefono {
   display: flex;
   flex-direction: row;
   text-align: center;
   align-items: center;
   margin-top: 20px;
 }
-.footer__consulta-telefono-icono {
+footer .footer__consulta-telefono-icono {
   width: 40px;
 }
-.footer__consulta-mail {
+footer .footer__consulta-mail {
   display: flex;
   flex-direction: row;
   text-align: left;
   align-items: center;
   margin-top: 10px;
 }
-.footer__consulta-mail-icono {
+footer .footer__consulta-mail-icono {
   width: 40px;
 }
-.footer form {
+footer .footer form {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
   justify-items: center;
   width: 100px;
 }
-.footer form input {
+footer .footer form input {
   height: 40px;
   margin-bottom: 10px;
 }
-.footer form button {
+footer .footer form button {
   height: 30px;
-  width: 60px;
-  margin-left: 20px;
+  width: 100px;
 }
 
 @media (min-width: 768px) {
-  .footer {
+  footer .footer {
     display: flex;
     background-color: #a8c6fa;
     justify-content: space-around;
     margin: 0;
   }
-  .footer__text {
+  footer .footer__text {
     text-align: left;
   }
-  .footer__consulta-telefono {
+  footer .footer__consulta-telefono {
     display: flex;
     flex-direction: row;
     text-align: center;
     align-items: center;
     margin-top: 20px;
   }
-  .footer__consulta-telefono-icono {
+  footer .footer__consulta-telefono-icono {
     width: 40px;
   }
-  .footer__consulta-mail {
+  footer .footer__consulta-mail {
     display: flex;
     flex-direction: row;
     text-align: left;
     align-items: center;
     margin-top: 10px;
   }
-  .footer__consulta-mail-icono {
+  footer .footer__consulta-mail-icono {
     width: 40px;
   }
-  .footer form {
+  footer .footer form {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
     justify-items: center;
   }
-  .footer form input {
+  footer .footer form input {
     height: 30px;
     width: 160px;
     margin-bottom: 10px;
     text-align: center;
   }
-  .footer form button {
+  footer .footer form button {
     height: 30px;
     width: 100px;
     margin-left: 30px;

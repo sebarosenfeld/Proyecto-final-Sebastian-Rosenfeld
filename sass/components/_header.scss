@@ -8,17 +8,19 @@ header {
     .header__container {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: $justifycontent;
 
         &-info {
             display: none;
         }
         
         &-navbar-mobile {
-            display: flex;
-            align-self: center;
-            font-size: 30px;
-            color: black;
+
+            i {
+                align-self: center;
+                font-size: 30px;
+                color: black;
+            }
         }
     }
 }
@@ -29,22 +31,14 @@ header {
         
         .header__container-info {
             display: inline;
-            padding-top: 20px;
             align-self: flex-end;
-        // &-phone-mail {
-        //     display: flex;
-        //     align-items: center;
-        //     margin-right: 10px;
-        // }
         }
 
         nav {
-            display: inline;
-            margin-top: 50px;
-    
+
             ul li {
                 display: inline;
-                margin-right: 20px;
+                padding-right: 40px;
                 font-size: 20px;
     
                 a {
@@ -64,41 +58,4 @@ header {
             display: none;
         }
     }
-
-    // // .image__header-phone {
-    // //     width: 40px;
-    // //     margin-right: 5px;
-    // // }
-    
-    // // .image__header-mail {
-    // //     width: 40px;
-    // //     margin-right: 5px;
-    // //     margin-left: 10px;
-    // // }
-    
-    // nav {
-    //     display: inline;
-    //     margin-top: 50px;
-
-    //     ul li {
-    //         display: inline;
-    //         margin-right: 50px;
-    //         font-size: 20px;
-
-    //         a {
-    //             text-decoration: underline;
-    //             color: black;
-    //         }
-    //     }
-    // }
-
-    // nav ul li a:hover {
-    //     color: blue;
-    //     font-style: oblique;
-    //     font-size: larger;
-    // }
-
-    // .header__container-navbar-movible {
-    //     display: none;
-    // }
 }
