@@ -19,7 +19,6 @@ main h1 {
   display: flex;
   justify-content: space-around;
   margin-top: 30px;
-  padding: 0 10px;
 }
 .main__button button:hover {
   font-size: large;
@@ -103,9 +102,12 @@ main h1 {
   }
   .main__button {
     display: flex;
-    justify-content: space-between;
     margin-top: 30px;
-    padding: 0 10px;
+  }
+  .main__button button {
+    border-radius: 5px;
+    margin-left: 0;
+    transition: all 0.3s;
   }
   .main__button button:hover {
     font-size: large;
@@ -286,35 +288,77 @@ header .header__container {
   flex-direction: row;
   justify-content: space-between;
 }
-header .header__container-info {
+header .header__container nav {
+  align-self: center;
+}
+header .header__container-navbar {
   display: none;
 }
-header .header__container-navbar-mobile i {
+header .header__container-navbar-mobile {
+  display: flex;
+}
+header .header__container-navbar-mobile span {
+  display: flex;
   align-self: center;
   font-size: 30px;
   color: black;
 }
+header .header__container-navbar-mobile ul {
+  position: absolute;
+  left: 0;
+  top: 100px;
+  background-color: rgb(77, 199, 138);
+  width: 100%;
+  display: none;
+}
+header .header__container-navbar-mobile ul li {
+  padding: 20px 0;
+  text-align: center;
+}
+header .header__container-navbar-mobile ul li a {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+header .header__container-navbar-mobile ul li:nth-child(even) {
+  background-color: rgb(60, 158, 77);
+}
+header .header__container-navbar-mobile:hover ul {
+  display: block;
+}
 
 @media (min-width: 768px) {
-  header .header__container-info {
-    display: inline;
+  header h1 a {
+    text-decoration: none;
+    color: black;
+  }
+  header .header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header .header__container nav {
     align-self: flex-end;
   }
-  header nav ul li {
+  header .header__container-navbar {
+    display: inline;
+  }
+  header .header__container-navbar li {
     display: inline;
     padding-right: 40px;
     font-size: 20px;
   }
-  header nav ul li a {
+  header .header__container-navbar li a {
     text-decoration: underline;
     color: black;
+    transition: all 0.3s;
   }
-  header nav ul li a:hover {
+  header .header__container-navbar li a:hover {
     color: blue;
     font-style: oblique;
     font-size: larger;
   }
-  header__container-navbar-movible {
+  header .header__container-navbar-mobile {
     display: none;
   }
 }
@@ -401,11 +445,19 @@ footer .footer form button {
     width: 160px;
     margin-bottom: 10px;
     text-align: center;
+    border: 2px solid rgb(11, 165, 11);
+    border-radius: 5px;
   }
   footer .footer form button {
     height: 30px;
     width: 100px;
     margin-left: 30px;
+    transition: all 0.3s;
+  }
+  footer .footer form button:hover {
+    font-size: large;
+    width: 140px;
+    margin-left: 10px;
   }
 }
 .whatsapp {

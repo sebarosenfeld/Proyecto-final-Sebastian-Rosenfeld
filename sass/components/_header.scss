@@ -10,52 +10,98 @@ header {
         flex-direction: row;
         justify-content: $justifycontent;
 
-        &-info {
-            display: none;
+        nav {
+            align-self: center;
         }
-        
-        &-navbar-mobile {
 
-            i {
+        &-navbar {
+                display: none;
+            }
+            
+        &-navbar-mobile {
+            display: flex;
+    
+            span {
+                display: flex;
                 align-self: center;
                 font-size: 30px;
                 color: black;
             }
-        }
+
+            ul {
+                position: absolute;
+                left: 0;
+                top: 100px;
+                background-color: rgb(77, 199, 138);
+                width: 100%;
+                display: none;
+
+                li {
+                    padding: 20px 0;
+                    text-align: center;
+
+                    a {
+                        font-weight: bold;
+                        color: black;
+                        text-decoration: none;
+                    }
+
+                    &:nth-child(even) {
+                        background-color: rgb(60, 158, 77);
+                    }
+                }
+            }
+
+            &:hover ul {
+                display: block;
+            }
+        }            
     }
 }
 
 @media (min-width: 768px) {
 
     header {
-        
-        .header__container-info {
-            display: inline;
-            align-self: flex-end;
+
+        h1 a {
+            text-decoration: none;
+            color: black;
         }
+        
+        .header__container {
+            display: flex;
+            flex-direction: row;
+            justify-content: $justifycontent;
 
-        nav {
+            nav {
+                align-self: flex-end;
+            }
 
-            ul li {
+            &-navbar {
                 display: inline;
-                padding-right: 40px;
-                font-size: 20px;
     
-                a {
-                    text-decoration: underline;
-                    color: black;
+                li {
+                    display: inline;
+                    padding-right: 40px;
+                    font-size: 20px;
+    
+                    a {
+                        text-decoration: underline;
+                        color: black;
+                        transition: all 0.3s;
+                    }
                 }
             }
-        }
     
-        nav ul li a:hover {
-            color: blue;
-            font-style: oblique;
-            font-size: larger;
-        }
+            &-navbar li a:hover {
+                color: blue;
+                font-style: oblique;
+                font-size: larger;
+            }
     
-        &__container-navbar-movible {
-            display: none;
+            &-navbar-mobile {
+                display: none;
+            }
         }
     }
 }
