@@ -1,3 +1,3 @@
-# proyecto Wior
+# Proyecto Wior
 
-Esta es **la tercera pre entrega** del proyecto final.
+Este es el proyecto final del curso de **desarrollo web** de Coderhouse.
