@@ -20,6 +20,9 @@ main h1 {
   justify-content: space-between;
   margin-top: 30px;
 }
+.main__button button {
+  margin-left: 10px;
+}
 .main__button button:hover {
   font-size: large;
   font-style: oblique;
@@ -37,8 +40,8 @@ main h1 {
   text-decoration: underline;
   text-align: center;
 }
-.concentrador div img {
-  padding-left: 130px;
+.concentrador div {
+  text-align: center;
 }
 .concentrador div p {
   text-align: justify;
@@ -49,8 +52,8 @@ main h1 {
   text-decoration: underline;
   text-align: center;
 }
-.cpap div img {
-  padding-left: 150px;
+.cpap div {
+  text-align: center;
 }
 .cpap div p {
   text-align: justify;
@@ -66,9 +69,7 @@ main h1 {
 
 .pañales__image-text {
   margin-top: 10px;
-}
-.pañales__image-text img {
-  padding-left: 120px;
+  text-align: center;
 }
 .pañales__image-text p {
   margin-right: 20px;
@@ -87,9 +88,7 @@ main h1 {
 
 .Descartables__image-guantes {
   margin-top: 30px;
-}
-.Descartables__image-guantes img {
-  padding-left: 100px;
+  text-align: center;
 }
 .Descartables__image-guantes p {
   margin-right: 20px;
@@ -99,9 +98,7 @@ main h1 {
 
 .image__jeringas {
   margin-top: 30px;
-}
-.image__jeringas img {
-  padding-left: 100px;
+  text-align: center;
 }
 .image__jeringas p {
   margin-right: 20px;
@@ -112,9 +109,7 @@ main h1 {
 .image__apositos-gasas {
   margin-top: 30px;
   padding-bottom: 20px;
-}
-.image__apositos-gasas img {
-  padding-left: 150px;
+  text-align: center;
 }
 .image__apositos-gasas p {
   margin-right: 20px;
@@ -154,9 +149,6 @@ main h1 {
     display: flex;
     margin-top: 20px;
   }
-  .concentrador div img {
-    padding-left: 0;
-  }
   .concentrador div p {
     padding-left: 40px;
   }
@@ -166,9 +158,6 @@ main h1 {
   }
   .cpap div {
     display: flex;
-  }
-  .cpap div img {
-    padding-left: 0;
   }
   .cpap div p {
     padding-left: 40px;
@@ -184,9 +173,6 @@ main h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  .pañales__image-text img {
-    padding-left: 0;
   }
   .pañales__image-text p {
     margin-right: 20px;
@@ -204,9 +190,6 @@ main h1 {
     justify-content: space-between;
     align-items: center;
   }
-  .Descartables__image-guantes img {
-    padding-left: 0;
-  }
   .Descartables__image-guantes p {
     margin-right: 20px;
     font-style: oblique;
@@ -216,9 +199,6 @@ main h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  .image__jeringas img {
-    padding-left: 0;
   }
   .image__jeringas p {
     margin-right: 20px;
@@ -230,9 +210,6 @@ main h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  .image__apositos-gasas img {
-    padding-left: 0;
   }
   .image__apositos-gasas p {
     margin-right: 20px;
@@ -466,6 +443,7 @@ footer .footer form input {
 footer .footer form button {
   height: 30px;
   width: 100px;
+  border-radius: 5px;
 }
 
 @media (min-width: 768px) {

@@ -8,6 +8,10 @@ main h1 {
     justify-content: space-between;
     margin-top: 30px;
 
+    button {
+        margin-left: 10px;
+    }
+
     button:hover {
         font-size: large;
         font-style: oblique;
@@ -30,10 +34,7 @@ main h1 {
     }
     
     div {
-
-        img {
-            padding-left: 130px;
-        }
+        text-align: $alignposition;
 
         p {
             text-align: justify;
@@ -50,10 +51,7 @@ main h1 {
     }
     
     div {
-
-        img {
-            padding-left: 150px;
-        }
+        text-align: $alignposition;
 
         p {
             text-align: justify;
@@ -71,10 +69,8 @@ main h1 {
 
 .pañales__image-text {
     margin-top: 10px;
+    text-align: $alignposition;
 
-    img {
-        padding-left: 120px;
-    }
         
     p {
             margin-right: 20px;
@@ -94,10 +90,7 @@ main h1 {
 
 .Descartables__image-guantes {
     margin-top: 30px;
-
-    img {
-        padding-left: 100px;
-    }
+    text-align: $alignposition;
 
     p {
         margin-right: 20px;
@@ -108,10 +101,7 @@ main h1 {
 
 .image__jeringas {
     margin-top: 30px;
-
-    img {
-        padding-left: 100px;
-    }
+    text-align: $alignposition;
         
     p {
         margin-right: 20px;
@@ -123,10 +113,7 @@ main h1 {
 .image__apositos-gasas {
     margin-top: 30px;
     padding-bottom: 20px;
-
-    img {
-        padding-left: 150px;
-    }
+    text-align: $alignposition;
         
     p {
         margin-right: 20px;
@@ -175,10 +162,6 @@ main h1 {
             display: flex;
             margin-top: 20px;
 
-            img {
-                padding-left: 0;
-            }
-
             p {
                 padding-left: 40px;
             }
@@ -194,10 +177,6 @@ main h1 {
         
         div {
             display: flex;
-
-            img {
-                padding-left: 0;
-            }
 
             p {
                 padding-left: 40px;
@@ -217,10 +196,6 @@ main h1 {
         display: flex;
         justify-content: $justifycontent;
         align-items: $alignposition;
-
-        img {
-            padding-left: 0;
-        }
             
         p {
                 margin-right: 20px;
@@ -240,10 +215,6 @@ main h1 {
         display: flex;
         justify-content: $justifycontent;
         align-items: $alignposition;
-
-        img {
-            padding-left: 0;
-        }
     
         p {
             margin-right: 20px;
@@ -256,11 +227,7 @@ main h1 {
         display: flex;
         justify-content: $justifycontent;
         align-items: $alignposition;
-
-        img {
-            padding-left: 0;
-        }
-            
+  
         p {
             margin-right: 20px;
             font-style: oblique;            
@@ -273,10 +240,6 @@ main h1 {
         display: flex;
         justify-content: $justifycontent;
         align-items: $alignposition;
-
-        img {
-            padding-left: 0;
-        }
             
         p {
             margin-right: 20px;
