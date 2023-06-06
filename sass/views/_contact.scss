@@ -40,13 +40,24 @@ main {
         }
     }
 
-    input {
-        display: flex;
-        margin: 10px
-    }
+    form {
+        
+        input {
+            display: flex;
+            margin: 10px;
+            border: 2px solid rgb(11, 165, 11);
+            border-radius: 5px;
+        }
 
-    button {
-       margin-left: 50px;
+        button {
+           margin-left: 50px;
+           transition: all 0.6s;
+        }
+
+        button:hover {
+            font-size: large;
+            width: 80px;
+        }
     }
 } 
     
@@ -98,21 +109,24 @@ main {
             }
         }
 
-        input {
-            display: flex;
-            margin: 10px;
-            border: 2px solid rgb(11, 165, 11);
-            border-radius: 5px;
-        }
+        form {
 
-        button {
-           margin-left: 50px;
-           transition: all 0.6s;
-        }
-
-        button:hover {
-            font-size: large;
-            width: 80px;
+            input {
+                display: flex;
+                margin: 10px;
+                border: 2px solid rgb(11, 165, 11);
+                border-radius: 5px;
+            }
+    
+            button {
+               margin-left: 50px;
+               transition: all 0.6s;
+            }
+    
+            button:hover {
+                font-size: large;
+                width: 80px;
+            }
         }
     } 
         

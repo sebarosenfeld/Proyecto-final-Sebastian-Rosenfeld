@@ -17,7 +17,7 @@ main h1 {
 
 .main__button {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 30px;
 }
 .main__button button:hover {
@@ -30,10 +30,15 @@ main h1 {
   font-size: larger;
   font-weight: bold;
   margin-top: 50px;
+  text-align: center;
 }
 
 .concentrador__resumen-foto {
   text-decoration: underline;
+  text-align: center;
+}
+.concentrador div img {
+  padding-left: 130px;
 }
 .concentrador div p {
   text-align: justify;
@@ -42,6 +47,10 @@ main h1 {
 .cpap__resumen-foto {
   margin-top: 20px;
   text-decoration: underline;
+  text-align: center;
+}
+.cpap div img {
+  padding-left: 150px;
 }
 .cpap div p {
   text-align: justify;
@@ -52,15 +61,20 @@ main h1 {
   margin-top: 80px;
   font-size: larger;
   font-weight: bold;
+  text-align: center;
 }
 
 .pañales__image-text {
-  margin-top: 30px;
+  margin-top: 10px;
+}
+.pañales__image-text img {
+  padding-left: 120px;
 }
 .pañales__image-text p {
   margin-right: 20px;
   font-style: oblique;
   text-align: justify;
+  text-align: center;
 }
 
 .Descartables__title {
@@ -68,31 +82,44 @@ main h1 {
   margin-top: 80px;
   font-size: larger;
   font-weight: bold;
+  text-align: center;
 }
 
 .Descartables__image-guantes {
   margin-top: 30px;
 }
+.Descartables__image-guantes img {
+  padding-left: 100px;
+}
 .Descartables__image-guantes p {
   margin-right: 20px;
   font-style: oblique;
+  text-align: center;
 }
 
 .image__jeringas {
   margin-top: 30px;
 }
+.image__jeringas img {
+  padding-left: 100px;
+}
 .image__jeringas p {
   margin-right: 20px;
   font-style: oblique;
+  text-align: center;
 }
 
 .image__apositos-gasas {
   margin-top: 30px;
   padding-bottom: 20px;
 }
+.image__apositos-gasas img {
+  padding-left: 150px;
+}
 .image__apositos-gasas p {
   margin-right: 20px;
   font-style: oblique;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -102,6 +129,7 @@ main h1 {
   }
   .main__button {
     display: flex;
+    justify-content: space-between;
     margin-top: 30px;
   }
   .main__button button {
@@ -124,6 +152,10 @@ main h1 {
   }
   .concentrador div {
     display: flex;
+    margin-top: 20px;
+  }
+  .concentrador div img {
+    padding-left: 0;
   }
   .concentrador div p {
     padding-left: 40px;
@@ -134,6 +166,9 @@ main h1 {
   }
   .cpap div {
     display: flex;
+  }
+  .cpap div img {
+    padding-left: 0;
   }
   .cpap div p {
     padding-left: 40px;
@@ -149,6 +184,9 @@ main h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .pañales__image-text img {
+    padding-left: 0;
   }
   .pañales__image-text p {
     margin-right: 20px;
@@ -166,6 +204,9 @@ main h1 {
     justify-content: space-between;
     align-items: center;
   }
+  .Descartables__image-guantes img {
+    padding-left: 0;
+  }
   .Descartables__image-guantes p {
     margin-right: 20px;
     font-style: oblique;
@@ -175,6 +216,9 @@ main h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .image__jeringas img {
+    padding-left: 0;
   }
   .image__jeringas p {
     margin-right: 20px;
@@ -186,6 +230,9 @@ main h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .image__apositos-gasas img {
+    padding-left: 0;
   }
   .image__apositos-gasas p {
     margin-right: 20px;
@@ -223,12 +270,19 @@ main .main__contact-mail-image {
   width: 40px;
   margin-right: 10px;
 }
-main input {
+main form input {
   display: flex;
   margin: 10px;
+  border: 2px solid rgb(11, 165, 11);
+  border-radius: 5px;
 }
-main button {
+main form button {
   margin-left: 50px;
+  transition: all 0.6s;
+}
+main form button:hover {
+  font-size: large;
+  width: 80px;
 }
 
 .mapa {
@@ -268,17 +322,17 @@ main button {
     width: 40px;
     margin-right: 10px;
   }
-  main input {
+  main form input {
     display: flex;
     margin: 10px;
     border: 2px solid rgb(11, 165, 11);
     border-radius: 5px;
   }
-  main button {
+  main form button {
     margin-left: 50px;
     transition: all 0.6s;
   }
-  main button:hover {
+  main form button:hover {
     font-size: large;
     width: 80px;
   }
@@ -304,7 +358,7 @@ header .header__container-navbar {
 header .header__container-navbar-mobile {
   display: flex;
 }
-header .header__container-navbar-mobile span {
+header .header__container-navbar-mobile i {
   display: flex;
   align-self: center;
   font-size: 30px;
@@ -317,6 +371,7 @@ header .header__container-navbar-mobile ul {
   background-color: rgb(77, 199, 138);
   width: 100%;
   display: none;
+  z-index: 1;
 }
 header .header__container-navbar-mobile ul li {
   padding: 20px 0;
@@ -405,6 +460,8 @@ footer .footer form {
 footer .footer form input {
   height: 40px;
   margin-bottom: 10px;
+  border: 2px solid rgb(11, 165, 11);
+  border-radius: 5px;
 }
 footer .footer form button {
   height: 30px;

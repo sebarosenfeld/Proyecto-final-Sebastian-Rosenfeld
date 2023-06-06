@@ -5,7 +5,7 @@ main h1 {
 
 .main__button {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 30px;
 
     button:hover {
@@ -19,15 +19,21 @@ main h1 {
     font-size: larger;
     font-weight: bold;
     margin-top: 50px;
+    text-align: $alignposition;
 }
 
 .concentrador {
 
     &__resumen-foto {
         text-decoration: underline;
+        text-align: $alignposition;
     }
     
     div {
+
+        img {
+            padding-left: 130px;
+        }
 
         p {
             text-align: justify;
@@ -40,9 +46,14 @@ main h1 {
     &__resumen-foto {
         margin-top: 20px;
         text-decoration: underline;
+        text-align: $alignposition;
     }
     
     div {
+
+        img {
+            padding-left: 150px;
+        }
 
         p {
             text-align: justify;
@@ -55,15 +66,21 @@ main h1 {
     margin-top: 80px;
     font-size: larger;
     font-weight: bold;
+    text-align: $alignposition;
 }
 
 .pañales__image-text {
-    margin-top: 30px;
+    margin-top: 10px;
+
+    img {
+        padding-left: 120px;
+    }
         
     p {
             margin-right: 20px;
             font-style: oblique;
             text-align: justify;
+            text-align: $alignposition;
     }
 }
 
@@ -72,33 +89,49 @@ main h1 {
     margin-top: 80px;
     font-size: larger;
     font-weight: bold;
+    text-align: $alignposition;
 }
 
 .Descartables__image-guantes {
     margin-top: 30px;
 
+    img {
+        padding-left: 100px;
+    }
+
     p {
         margin-right: 20px;
         font-style: oblique;
+        text-align: $alignposition;
     }
 }
 
 .image__jeringas {
     margin-top: 30px;
+
+    img {
+        padding-left: 100px;
+    }
         
     p {
         margin-right: 20px;
-        font-style: oblique;            
+        font-style: oblique;
+        text-align: $alignposition;       
     }
 }
 
 .image__apositos-gasas {
     margin-top: 30px;
     padding-bottom: 20px;
+
+    img {
+        padding-left: 150px;
+    }
         
     p {
         margin-right: 20px;
-        font-style: oblique;            
+        font-style: oblique;
+        text-align: $alignposition;          
     }
 }
 
@@ -111,6 +144,7 @@ main h1 {
     
     .main__button {
         display: flex;
+        justify-content: $justifycontent;
         margin-top: 30px;
 
         button {
@@ -133,13 +167,17 @@ main h1 {
     }
 
     .concentrador {
-
         &__resumen-foto {
             text-decoration: underline;
         }
         
         div {
             display: flex;
+            margin-top: 20px;
+
+            img {
+                padding-left: 0;
+            }
 
             p {
                 padding-left: 40px;
@@ -156,6 +194,10 @@ main h1 {
         
         div {
             display: flex;
+
+            img {
+                padding-left: 0;
+            }
 
             p {
                 padding-left: 40px;
@@ -175,6 +217,10 @@ main h1 {
         display: flex;
         justify-content: $justifycontent;
         align-items: $alignposition;
+
+        img {
+            padding-left: 0;
+        }
             
         p {
                 margin-right: 20px;
@@ -194,6 +240,10 @@ main h1 {
         display: flex;
         justify-content: $justifycontent;
         align-items: $alignposition;
+
+        img {
+            padding-left: 0;
+        }
     
         p {
             margin-right: 20px;
@@ -206,6 +256,10 @@ main h1 {
         display: flex;
         justify-content: $justifycontent;
         align-items: $alignposition;
+
+        img {
+            padding-left: 0;
+        }
             
         p {
             margin-right: 20px;
@@ -219,6 +273,10 @@ main h1 {
         display: flex;
         justify-content: $justifycontent;
         align-items: $alignposition;
+
+        img {
+            padding-left: 0;
+        }
             
         p {
             margin-right: 20px;
