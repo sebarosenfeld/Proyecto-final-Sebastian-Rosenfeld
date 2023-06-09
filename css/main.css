@@ -345,7 +345,6 @@ header .header__container-navbar-mobile ul {
   position: absolute;
   left: 0;
   top: 100px;
-  background-color: rgb(77, 199, 138);
   width: 100%;
   display: none;
   z-index: 1;
@@ -353,14 +352,15 @@ header .header__container-navbar-mobile ul {
 header .header__container-navbar-mobile ul li {
   padding: 20px 0;
   text-align: center;
+  list-style: none;
 }
 header .header__container-navbar-mobile ul li a {
   font-weight: bold;
-  color: white;
+  color: black;
   text-decoration: none;
 }
 header .header__container-navbar-mobile ul li:nth-child(even) {
-  background-color: rgb(60, 158, 77);
+  background-color: rgb(12, 51, 97);
 }
 header .header__container-navbar-mobile:hover ul {
   display: block;
